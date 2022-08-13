@@ -41,7 +41,7 @@ sudo apt update && sudo apt upgrade -y
 
 ## Install GO
 ```
-if ! [ -x "$(command -v go)" ]; then
+
   ver="1.18.3"
   cd $HOME
   wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
@@ -50,7 +50,6 @@ if ! [ -x "$(command -v go)" ]; then
   rm "go$ver.linux-amd64.tar.gz"
   echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> ~/.bash_profile
   source ~/.bash_profile
-fi
 ```
 
 ## Install and initialize GO Relayer v2
